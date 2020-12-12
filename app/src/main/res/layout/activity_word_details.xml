@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WordDetailsActivity">
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"></androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+<TextView
+    android:id="@+id/headWord"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Hello"
+    android:gravity="center"
+    android:textSize="35sp"
+    android:textStyle="bold"
+    android:padding="10dp"
+    android:textColor="@color/PUBULAN"
+    android:fontFamily="sans-serif-black"
+    ></TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:nestedScrollingEnabled="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/ukphone_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center_horizontal"
+                        android:text="英式发音"
+
+                        android:textColor="@color/FENHONG"
+                        android:textSize="20sp"
+                        android:textStyle="bold"></TextView>
+
+
+                    <ImageView
+                        android:id="@+id/play_vioce_uk"
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:background="@mipmap/play_voice_uk" />
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:nestedScrollingEnabled="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/usphone_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="美式发音"
+                        android:textColor="@color/FENHONG"
+                        android:textSize="20sp"
+                        android:textStyle="bold"></TextView>
+
+                    <ImageView
+                        android:id="@+id/play_vioce_us"
+
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:background="@mipmap/play_voice_us"></ImageView>
+                </LinearLayout>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tranCN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="tranCn"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="25sp"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/PUBULAN"
+            android:text="英文释义"
+            android:gravity="center"></TextView>
+
+                <TextView
+                    android:id="@+id/tranEn"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="25sp"
+                    android:text="tranEn"></TextView>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/PUBULAN"
+            android:text="例句"
+            ></TextView>
+                <TextView
+                    android:id="@+id/sentences"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="sentences"
+                    android:padding="10dp"
+                    android:textSize="25sp"
+                    android:gravity="center"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/PUBULAN"
+            android:text="词组"
+            ></TextView>
+
+                <TextView
+                    android:id="@+id/phrases"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="phrases"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="25sp"
+                    android:drawableBottom="@color/FENHONG"
+                    ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/PUBULAN"
+            android:text="同近词"
+            ></TextView>
+
+                <TextView
+                    android:id="@+id/synos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textSize="25sp"
+                    android:text="synos"></TextView>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+
+
+

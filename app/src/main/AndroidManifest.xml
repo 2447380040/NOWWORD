@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.now_word">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".DictateWordStudyActivity"></activity>
+        <activity android:name=".FinishWordStudyActivity" />
+        <activity android:name=".FlagWordStudyActivity" />
+        <activity android:name=".DangerWordStudyActivity" />
+        <activity android:name=".MainStudyActivity" />
+        <activity android:name=".SearchWordActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".WordDetailsActivity">
+        </activity>
+        <activity android:name=".SockScreenActivity"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/statusTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

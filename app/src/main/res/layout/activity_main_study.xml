@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainStudyActivity"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:nestedScrollingEnabled="true"
+
+    >
+
+  <!--提示框-->
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="还需新背："
+        android:textColor="@android:color/black"
+        ></TextView>
+    <TextView
+        android:id="@+id/today_neednewCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50"
+        android:textColor="@android:color/black">
+    </TextView>
+
+  </LinearLayout>
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+
+      >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="还需复习："
+        android:textColor="@android:color/black"
+        ></TextView>
+    <TextView
+        android:id="@+id/today_needreviewCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50"
+        android:textColor="@android:color/black">
+    </TextView>
+
+  </LinearLayout>
+  <!--背单词主页面-->
+  <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="10dp"
+      app:cardCornerRadius="5dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+
+      app:cardElevation="6dp"
+      app:cardUseCompatPadding="true"
+      app:cardPreventCornerOverlap="true"
+      >
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="85dp"
+      android:layout_marginTop="5dp"
+      android:background="@android:color/white">
+
+
+    <TextView
+        android:id="@+id/word_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="parent"
+        android:height="80dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="@color/TANCCILAN"
+
+        android:textSize="45sp" ></TextView>
+  </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:nestedScrollingEnabled="true"
+        android:orientation="horizontal">
+
+      <TextView
+          android:nestedScrollingEnabled="true"
+          android:id="@+id/ukphone_text"
+          android:layout_width="wrap_content"
+          android:layout_height="30dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:fontFamily="sans-serif-black"
+          android:gravity="center_horizontal"
+          android:text="英式发音"
+          android:textColor="@color/FENHONG"
+          android:textSize="20sp"
+          android:textStyle="bold"></TextView>
+
+
+      <ImageView
+          android:id="@+id/play_vioce_uk"
+          android:layout_width="26dp"
+          android:layout_height="26dp"
+          android:background="@mipmap/play_voice_uk" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:nestedScrollingEnabled="true"
+        android:orientation="horizontal">
+
+      <TextView
+          android:id="@+id/usphone_text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:text="美式发音"
+          android:textColor="@color/FENHONG"
+          android:textSize="20sp"
+          android:textStyle="bold"></TextView>
+
+      <ImageView
+          android:id="@+id/play_vioce_us"
+
+          android:layout_width="26dp"
+          android:layout_height="26dp"
+          android:background="@mipmap/play_voice_us"></ImageView>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<androidx.core.widget.NestedScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="220dp">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+  <TextView
+      android:layout_width="match_parent"
+      android:textStyle="bold"
+      android:layout_height="wrap_content"
+      android:text="例句:"
+      android:gravity="left"
+      android:textColor="@color/TANCCILAN"></TextView>
+
+  <TextView
+      android:id="@+id/sentence_text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+
+
+      android:gravity="left"
+      android:text="例句"
+
+      android:fontFamily="sans-serif-black"
+      android:textStyle="bold"
+      android:textColor="@color/TANCCILAN"
+      android:textSize="18sp" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/TANCCILAN"
+   android:text="英文释义"></TextView>
+  <TextView
+      android:id="@+id/tranEN_text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="5dp"
+      android:layout_marginTop="5dp"
+      android:gravity="left"
+      android:text="英文释义"
+      android:textStyle="bold"
+      android:textColor="@color/TANCCILAN"
+      android:nestedScrollingEnabled="true"
+      android:textSize="18sp" />
+  </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+</LinearLayout>
+  </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="5dp"
+      app:cardCornerRadius="5dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      app:cardElevation="6dp"
+      app:cardUseCompatPadding="true"
+      app:cardPreventCornerOverlap="true"
+      >
+  <RadioGroup
+      android:id="@+id/choose_group"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+
+      android:orientation="vertical">
+
+    <RadioButton
+        android:id="@+id/choose_btn_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A:兄弟"
+        android:button="@null"
+        android:gravity="left"
+        android:textColor="@color/TANCCILAN"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="20sp" />
+
+
+    <RadioButton
+        android:id="@+id/choose_btn_two"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:text="B:姐妹"
+        android:button="@null"
+        android:textColor="@color/TANCCILAN"
+        android:padding="10dp"
+        android:textSize="20sp" />
+
+    <RadioButton
+        android:id="@+id/choose_btn_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:text="C:父母"
+        android:textStyle="bold"
+        android:button="@null"
+        android:textColor="@color/TANCCILAN"
+        android:padding="10dp"
+        android:textSize="20sp" />
+
+    <RadioButton
+        android:id="@+id/choose_btn_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="D:美女"
+        android:gravity="left"
+        android:button="@null"
+        android:textStyle="bold"
+        android:textColor="@color/TANCCILAN"
+        android:padding="10dp"
+        android:textSize="20sp" />
+  </RadioGroup>
+  </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
